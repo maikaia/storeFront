@@ -47,7 +47,6 @@ function renderProduct(product) {
 
   buttonElement.addEventListener("click", function () {
     renderShoppingCartList(product);
-    3;
   });
 
   function renderShoppingCartList(product) {

@@ -1,0 +1,13 @@
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productList>div {
+    width: 30%;
+}
+
+img {
+    width: 100%;
+}
