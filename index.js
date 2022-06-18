@@ -14,7 +14,7 @@ function renderProduct(product) {
   const div = document.createElement("div");
   div.id = product.id;
 
-  nameElement = document.createElement("h1");
+  nameElement = document.createElement("h2");
   imgElement = document.createElement("img");
   descElement = document.createElement("p");
   priceElement = document.createElement("p");
@@ -26,13 +26,13 @@ function renderProduct(product) {
   imgElement.src = product.images[0].src.small;
   imgElement.alt = product.images[0].alt;
   descElement.innerText = product.description;
-  priceElement.innerText = `Price: ${product.price} kr`;
+  priceElement.innerText = `${product.price} kr.`;
   ratingElement.innerText = `Rating: ${product.rating} / 5 ⭐`;
   stockElement.innerText = `Stock: ${product.stock}`;
   buttonElement.innerText = "Buy";
 
-  div.appendChild(nameElement);
   div.appendChild(imgElement);
+  div.appendChild(nameElement);
   div.appendChild(descElement);
   div.appendChild(priceElement);
   div.appendChild(ratingElement);
